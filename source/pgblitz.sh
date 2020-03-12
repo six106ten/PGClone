@@ -68,7 +68,8 @@ while read p; do
   --exclude="**deluge**" --exclude="**transmission**" \
   --exclude="**jdownloader**" --exclude="**makemkv**" \
   --exclude="**handbrake**" --exclude="**bazarr**" \
-  --exclude="**ignore**"  --exclude="**inProgress**"
+  --exclude="**ignore**"  --exclude="**inProgress**" \
+  --exclude="metadata.db"
 
   echo "Cycle $cyclecount - Sleeping for 30 Seconds" >> /pg/logs/pgblitz.log
   cat /pg/logs/pgblitz.log | tail -200 > /pg/logs/pgblitz.log
